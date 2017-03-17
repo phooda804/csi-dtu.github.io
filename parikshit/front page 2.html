@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<title>CSI-DTU Chapter</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+
+<style>
+.container{width:90%;}
+
+.container-for-logo-and-heading{display:flex;
+flex-direction:column;
+justify-content:center;
+flex-wrap:wrap;}
+
+.photo1{flex:1;}
+.photo2{flex:1;}
+
+.heading{flex:1;
+}
+
+.container-for-logos{display:flex;
+flex-direction:row;}
+
+<!--css for slider start-->
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 80%;
+  height:50%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 80%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 80%;
+  border: 0;
+  }
+  
+  
+  .collapsible-accordion{position:relative;
+top:40px;}
+<!-- css for slider end-->
+
+
+</style>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+
+
+
+</head>
+
+<body class="blue-grey lighten-4">
+<div class="container">
+<div class="container-for-logo-and-heading">
+<div class="container-for-logos">
+<div class="photo1  col s10 m4 l4"><img  src="ms-icon-310x310.png" alt="csi-dtu logo" class="responsive-img" ></div>
+<div class="photo2  col s10 m4 l4"><img  src="dtu-logo.png" alt="dtu logo" class="responsive-img" ></div>
+</div>
+<div class="heading"><span class="flow-text"><h1>Computer Society Of India-DTU Chapter</h1></span></div>
+</div>
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content left">
+  <li><a href="#!">Event Calender</a></li>
+    <li class="divider"></li>
+  <li><a href="#!">members</a></li>
+    <li class="divider"></li>
+  <li><a href="#!">history</a></li>
+</ul>
+<nav class="navigationbar">
+  <div class="nav-wrapper">
+    <ul class="center">
+      <li><a href="#!">About Us</a></li>
+      <li><a href="#!">Members</a></li>
+	  <li><a href="#!">Reach Us</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--slider..here goes-->
+<ul class="rslides">
+  <li><img src="dtu-logo.png" alt=""></li>
+  <li><img src="dtu-logo.png" alt=""></li>
+  <li><img src="dtu-logo.png" alt=""></li>
+</ul>
+
+
+
+
+
+<!--slider code ends-->
+<!--code for accordion-->
+<div class="collapsible-accordion">
+<ul class="collapsible" data-collapsible="expandable">
+<li>
+<div class="collapsible-header active"><i class="material-icons">filter_drama</i>About Us</div>
+<div class="collapsible-body"><span class="flow-text">Hello!We are the DTU chapter of CSI</span></div>
+</li>
+<li>
+<div class="collapsible-header"><i class="material-icons">place</i>About Us</div>
+<div class="collapsible-body"><span class="flow-text">Hello!we are the student chapter of DTU-CSI</span></div>
+</li>
+<li>
+<div class="collapsible-header"><i class="material-icons">whatshot</i>About Us</div>
+<div class="collapsible-body"><span class="flow-text">Hello!we are the student chapter of DTU-CSI</span></div>
+</li>
+</ul>
+
+</div>
+<!--code end for accordion-->
+
+
+
+
+</div>
+</body>
+</html>
